@@ -1,4 +1,22 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:AboutLuce" x:Class="AboutLuce.AboutLucePage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	xmlns:local="clr-namespace:AboutLuce" 
+	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+	x:Class="AboutLuce.AboutLucePage">
+
+	<Grid BackgroundColor="Transparent">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="200" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Grid>
+				<Image Source="profile.png" Aspect="AspectFill" />
+				<StackLayout Padding="0,20,0,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+					<controls:CircleImage BorderColor="Black" BorderThickness="2" Source="profile.png" Aspect="AspectFill" WidthRequest="85" HeightRequest="85" />
+					<Label Text="Luce Carter" TextColor="Black" FontSize="Large" />
+				</StackLayout>
+			</Grid>
+		</Grid>
+	
 </ContentPage>

@@ -7,6 +7,8 @@ namespace AboutLuce
 		public AboutLucePage()
 		{
 			InitializeComponent();
+
+			BindingContext = new AboutLucePage();
 		}
 	}
 }
